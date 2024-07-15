@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farig - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="public/icons/cat.svg" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <style>
+      .dot:hover + .tooltip,
+      .tooltip:hover {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .tooltip {
+        transition: opacity 0.3s, transform 0.3s;
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+    </style>
+  </head>
+
+  <body class="bg-gradient-to-r from-[#1C1D24] to-[#242424]">
+    <!-- Desktop Navbar -->
+    <nav
+      id="navbar"
+      class="hidden md:flex z-50 bg-transparent backdrop-blur-sm transition-colors duration-300 ease-in-out hover:bg-[#1C1D24] p-2 rounded-full mx-auto mt-8 space-x-2 shadow-none hover:shadow-lg hover:shadow-slate-700/50 fixed top-0 left-1/2 transform -translate-x-1/2 backdrop-filter"
+    >
+      <a
+        href="#"
+        class="text-slate-400 hover:text-gray-300 font-semibold px-4 py-2 rounded transition duration-300 ease-in-out"
+        >Intro</a
+      >
+      <a
+        href="#section_profile"
+        class="text-slate-400 hover:text-gray-300 font-semibold px-4 py-2 rounded transition duration-300 ease-in-out"
+        >Profile</a
+      >
+      <a
+        href="#section_project"
+        class="text-slate-400 hover:text-gray-300 font-semibold px-4 py-2 rounded transition duration-300 ease-in-out"
+        >Project</a
+      >
+      <a
+        href="#skill_section"
+        class="text-slate-400 hover:text-gray-300 font-semibold px-4 py-2 rounded transition duration-300 ease-in-out"
+        >Skills</a
+      >
+      <a
+        href="#contact_section"
+        class="text-slate-400 hover:text-gray-300 font-semibold px-4 py-2 rounded transition duration-300 ease-in-out"
+        >Contact Me</a
+      >
+    </nav>
+
+    <!-- Mobile Navbar -->
+    <nav
+      id="mobile-navbar"
+      class="fixed top-4 left-1/2 transform -translate-x-1/2 flex space-x-4 z-50 md:hidden"
+    >
+      <div class="relative group">
+        <div
+          class="dot w-4 h-4 bg-gray-400 rounded-full group-hover:bg-gray-600 cursor-pointer"
+        ></div>
+        <div
+          class="tooltip absolute top-8 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-700 text-white text-sm rounded-md"
+        >
+          <a href="#" class="block px-4 py-2 text-white">Intro</a>
+        </div>
+      </div>
+      <div class="relative group">
+        <div
+          class="dot w-4 h-4 bg-gray-400 rounded-full group-hover:bg-gray-600 cursor-pointer"
+        ></div>
+        <div
+          class="tooltip absolute top-8 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-700 text-white text-sm rounded-md"
+        >
+          <a href="#section_profile" class="block px-4 py-2 text-white"
+            >Profile</a
+          >
+        </div>
+      </div>
+      <div class="relative group">
+        <div
+          class="dot w-4 h-4 bg-gray-400 rounded-full group-hover:bg-gray-600 cursor-pointer"
+        ></div>
+        <div
+          class="tooltip absolute top-8 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-700 text-white text-sm rounded-md"
+        >
+          <a href="#section_project" class="block px-4 py-2 text-white"
+            >Project</a
+          >
+        </div>
+      </div>
+      <div class="relative group">
+        <div
+          class="dot w-4 h-4 bg-gray-400 rounded-full group-hover:bg-gray-600 cursor-pointer"
+        ></div>
+        <div
+          class="tooltip absolute top-8 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-700 text-white text-sm rounded-md"
+        >
+          <a href="#skill_section" class="block px-4 py-2 text-white">Skills</a>
+        </div>
+      </div>
+      <div class="relative group">
+        <div
+          class="dot w-4 h-4 bg-gray-400 rounded-full group-hover:bg-gray-600 cursor-pointer"
+        ></div>
+        <div
+          class="tooltip absolute top-8 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-700 text-white text-sm rounded-md"
+        >
+          <a href="#contact_section" class="block px-4 py-2 text-white"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Section -->
+    <div class="flex justify-center items-center h-screen py-20 px-4 md:px-36">
+      <div class="text-center md:text-left px-4 md:px-8" id="">
+        <h1 class="text-2xl md:text-4xl font-bold text-slate-400">
+          farig muhammad taqy
+        </h1>
+        <p class="text-2xl md:text-5xl font-bold text-white mt-4">
+          Someone who loves learning new technologies. Eager to explore and
+          understand the latest tech advancements. Driven by creativity and a
+          desire to innovate.
+        </p>
+      </div>
+    </div>
+
+    <!-- Profile Section -->
+    <div
+      class="flex justify-center items-center h-screen py-20 px-4 md:px-36"
+      id="section_profile"
+    >
+      <div class="flex flex-col md:flex-row items-center gap-8 p-4 md:p-8">
+        <div class="relative">
+          <div class="absolute top-0 left-0 w-full h-full rounded-xl"></div>
+          <img
+            class="h-auto max-w-xs rounded-xl relative z-10"
+            src="public/image/profile.jpg"
+            alt="Profile"
+          />
+        </div>
+        <div class="text-center md:text-left mt-8 md:mt-0">
+          <h1 class="text-lg font-bold text-slate-400">Who am I?</h1>
+          <h2 class="text-4xl md:text-5xl font-bold text-slate-400">Hello!</h2>
+          <p class="text-base md:text-2xl font-bold text-white mt-4">
+            Born in 2004 in Pekanbaru, I am currently studying Information
+            Technology at Padang State Polytechnic. I am very interested in
+            becoming a software developer because since I was little I really
+            liked playing with computers, even before I spent about 8-9 hours on
+            the computer when I was in elementary school.
+          </p>
+          <p class="text-base md:text-2xl font-bold text-white mt-4">
+            Since I entered high school I started to be interested in
+            programming, I started to wonder how games, websites, applications
+            are made. Since then I started studying programming by entering a
+            vocational high school majoring in software engineering and
+            continuing it to Padang State Polytechnic by taking computer
+            engineering.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Section -->
+    <div
+      class="flex justify-center items-center py-24 px-4 md:px-36"
+      id="section_project"
+    >
+      <div
+        class="w-full max-w-7xl p-6 bg-slate-950 bg-opacity-20 rounded-xl p-9"
+      >
+        <h2 class="text-2xl md:text-3xl font-bold text-white">Project</h2>
+        <p class="text-white mb-6">
+          Projects that I work on myself or in collaboration with my friends
+        </p>
+
+        <!-- Yap2Type Project Card -->
+        <div
+          class="p-6 bg-gray-200 bg-gradient-to-b from-orange-500 to-orange-300 rounded-xl shadow-lg mb-6"
+        >
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl md:text-2xl font-bold text-gray-800">
+              Yap2Type
+            </h3>
+            <img src="public/icons/yap.png" class="h-16" alt="Yap2Type Icon" />
+          </div>
+          <p class="mb-8">
+            Introducing Yap2Type, an app that lets you listen to podcasts,
+            material or anything and then gives you a summary.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <img
+              src="public/image/icon.jpg"
+              class="rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+              alt="Yap2Type Icon"
+            />
+            <img
+              src="public/image/home.jpg"
+              class="rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+              alt="Yap2Type Home"
+            />
+            <img
+              src="public/image/about.jpg"
+              class="rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+              alt="Yap2Type About"
+            />
+          </div>
+          <p class="mb-4">
+            Maybe you don't have time to listen to a long podcast? or listen to
+            a long explanation? now there is Yap2Type which will help you
+            summarize it all and you still understand what is being talked
+            about.
+          </p>
+          <div class="flex items-center mb-4">
+            <a
+              href="https://github.com/rahmanfaisal0414/C241-PS042-Capstone-Yap2Type"
+              target="_blank"
+              class="pop-on-hover md:mr-4 mr-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+              >
+                <title>Project Repository</title>
+                <path
+                  d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="mb-4">Featured technologies used:</p>
+          <div class="flex space-x-4">
+            <img
+              src="public/icons/tensorflow.svg"
+              class="h-8 pointer-events-none"
+              alt="TensorFlow"
+            />
+            <img
+              src="public/icons/python.svg"
+              class="h-8 pointer-events-none"
+              alt="Python"
+            />
+            <img
+              src="public/icons/kotlin-original.svg"
+              class="h-8 pointer-events-none"
+              alt="Kotlin"
+            />
+          </div>
+        </div>
+        <!-- Caffein Project Card -->
+        <div
+          class="p-6 bg-gradient-to-t from-[#fbc2eb] via-pink-300 to-[#a6c1ee] rounded-xl shadow-lg mt-14"
+        >
+          <div class="flex items-center mb-2">
+            <h3 class="text-xl md:text-2xl font-bold text-gray-800">Caffein</h3>
+            <img
+              src="public/icons/caffein.png"
+              class="h-11 ml-4"
+              alt="Caffein Icon"
+            />
+          </div>
+          <p class="mb-8">
+            Introducing Caffein, A website that provides you a trendy drink and
+            still gonna make your mood and day better!
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <img
+              src="public/image/caffein_home.png"
+              class="rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+              alt="Caffein Home"
+            />
+            <img
+              src="public/image/caffein_product.png"
+              class="rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
+              alt="Caffein Product"
+            />
+          </div>
+          <p class="mb-4">
+            Don't have time to go outside to buy some drinks that you want? Just
+            go to Caffein; we provide trendy drinks that taste better than any
+            other store.
+          </p>
+          <div class="flex items-center mb-4">
+            <a
+              href="https://github.com/etther/coffe-app"
+              target="_blank"
+              class="pop-on-hover md:mr-4 mr-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+              >
+                <title>Project Repository</title>
+                <path
+                  d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="mb-4">Featured technologies used:</p>
+          <div class="flex space-x-4">
+            <img
+              src="public/icons/laravel.svg"
+              class="h-8 pointer-events-none"
+              alt="Laravel"
+            />
+            <img
+              src="public/icons/tailwind-css.svg"
+              class="h-8 pointer-events-none"
+              alt="Tailwind CSS"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div
+      class="flex justify-center items-center py-24 px-4 md:px-36"
+      id="skill_section"
+    >
+      <div
+        class="w-full max-w-7xl p-6 bg-slate-950 bg-opacity-20 rounded-xl p-9"
+      >
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <!-- Laravel -->
+            <div class="mb-4">
+              <div class="flex items-center justify-between mb-1">
+                <span
+                  class="text-base font-medium text-blue-700 dark:text-white"
+                  >Laravel</span
+                >
+                <span class="text-sm font-medium text-blue-700 dark:text-white"
+                  >70%</span
+                >
+              </div>
+              <div
+                class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 70%"
+                ></div>
+              </div>
+            </div>
+            <!-- PHP -->
+            <div class="mb-4">
+              <div class="flex items-center justify-between mb-1">
+                <span
+                  class="text-base font-medium text-blue-700 dark:text-white"
+                  >PHP</span
+                >
+                <span class="text-sm font-medium text-blue-700 dark:text-white"
+                  >85%</span
+                >
+              </div>
+              <div
+                class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 85%"
+                ></div>
+              </div>
+            </div>
+            <!-- Flutter -->
+            <div class="mb-4">
+              <div class="flex items-center justify-between mb-1">
+                <span
+                  class="text-base font-medium text-blue-700 dark:text-white"
+                  >Flutter</span
+                >
+                <span class="text-sm font-medium text-blue-700 dark:text-white"
+                  >45%</span
+                >
+              </div>
+              <div
+                class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 45%"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <!-- Python -->
+            <div class="mb-4">
+              <div class="flex items-center justify-between mb-1">
+                <span
+                  class="text-base font-medium text-blue-700 dark:text-white"
+                  >Python</span
+                >
+                <span class="text-sm font-medium text-blue-700 dark:text-white"
+                  >60%</span
+                >
+              </div>
+              <div
+                class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 60%"
+                ></div>
+              </div>
+            </div>
+            <!-- JavaScript -->
+            <div class="mb-4">
+              <div class="flex items-center justify-between mb-1">
+                <span
+                  class="text-base font-medium text-blue-700 dark:text-white"
+                  >JavaScript</span
+                >
+                <span class="text-sm font-medium text-blue-700 dark:text-white"
+                  >30%</span
+                >
+              </div>
+              <div
+                class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 30%"
+                ></div>
+              </div>
+            </div>
+            <!-- Java -->
+            <div class="mb-4">
+              <div class="flex items-center justify-between mb-1">
+                <span
+                  class="text-base font-medium text-blue-700 dark:text-white"
+                  >Java</span
+                >
+                <span class="text-sm font-medium text-blue-700 dark:text-white"
+                  >20%</span
+                >
+              </div>
+              <div
+                class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 20%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div
+      class="flex justify-center items-center py-24 px-4 md:px-36"
+      id="contact_section"
+    >
+      <div
+        class="w-full max-w-7xl p-6 bg-gradient-to-b from-slate-400 to-[#1C1D24] bg-opacity-20 rounded-xl p-9"
+      >
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">
+          Contact Me
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold text-white mb-4">
+              Farig Muhammad Taqy
+            </h3>
+            <p class="text-base md:text-lg text-white mb-4">
+              "Expanding your social network opens doors to new opportunities,
+              broadens your perspectives, and enriches your life in ways you
+              never imagined." Those words are what make me continue to look for
+              acquaintances, whether they are younger, the same age, or older
+              than me, because getting to know new people is really fun.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold text-white mb-4">
+              Let's Connect
+            </h3>
+            <p class="text-base md:text-lg text-white mb-4">
+              I am very happy to meet people who have the same passion as me,
+              let's connect and explore the rollercoaster of the technology
+              world together.
+            </p>
+            <div class="flex space-x-4">
+              <!--Linkedin-->
+              <a
+                href="https://www.linkedin.com/in/farig-muhammad-taqy-737194231/"
+                class="text-white hover:text-gray-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+              <!--Discord-->
+              <a
+                href="https://discordapp.com/users/1025004106768711771"
+                class="text-white hover:text-gray-300"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                >
+                  <path
+                    d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z"
+                  />
+                </svg>
+              </a>
+              <!--Instagram-->
+              <a
+                href="https://www.instagram.com/rigg26_?igsh=bTczaW1vbWp6NWJ2"
+                class="text-white hover:text-gray-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 2.424s-.006 1.792-.034 2.424c-.075 1.613-.832 2.386-2.46 2.46-.633.028-.822.035-2.425.035-1.602 0-1.792-.006-2.424-.035-1.63-.075-2.385-.849-2.46-2.46-.028-.632-.035-.822-.035-2.424s.007-1.792.035-2.424c.074-1.615.832-2.386 2.46-2.46.632-.029.822-.034 2.424-.034zm0-1.082c-1.63 0-1.833.007-2.474.037-2.18.1-3.39 1.309-3.49 3.489-.029.641-.036.845-.036 2.474 0 1.63.007 1.834.036 2.474.1 2.179 1.31 3.39 3.49 3.49.641.029.844.036 2.474.036 1.63 0 1.834-.007 2.475-.036 2.176-.1 3.391-1.309 3.489-3.49.029-.64.036-.844.036-2.474 0-1.629-.007-1.833-.036-2.474-.098-2.177-1.309-3.39-3.489-3.489-.641-.03-.845-.037-2.475-.037zm0 2.919c-1.701 0-3.081 1.379-3.081 3.081s1.38 3.081 3.081 3.081 3.081-1.379 3.081-3.081c0-1.701-1.38-3.081-3.081-3.081zm0 5.081c-1.105 0-2-.895-2-2 0-1.104.895-2 2-2 1.104 0 2.001.895 2.001 2s-.897 2-2.001 2zm3.202-5.922c-.397 0-.72.322-.72.72 0 .397.322.72.72.72.398 0 .721-.322.721-.72 0-.398-.322-.72-.721-.72z"
+                  />
+                </svg>
+              </a>
+              <!--Github-->
+              <a
+                href="https://github.com/etther"
+                class="text-white hover:text-gray-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
