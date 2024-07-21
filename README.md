@@ -13,17 +13,19 @@ Welcome to my portfolio website! This site showcases my work and skills using Ta
 To run this project locally, follow these steps:
 
 1. **Clone the Repository:**
-    ```sh
-    git clone https://github.com/etther/Portfolio.git
-    ```
+
+   ```sh
+   git clone https://github.com/etther/Portfolio.git
+   ```
 
 2. **Navigate to the Project Directory:**
-    ```sh
-    cd Portfolio
-    ```
+
+   ```sh
+   cd Portfolio
+   ```
 
 3. **Open the Project:**
-    Open `index.html` in your preferred web browser.
+   Open `index.html` in your preferred web browser.
 
 ## Usage
 
@@ -46,22 +48,22 @@ If you have suggestions or improvements, feel free to contribute! Here’s how y
 
 1. **Fork the Repository**
 2. **Create a New Branch**
-    ```sh
-    git checkout -b feature/your-feature
-    ```
+   ```sh
+   git checkout -b feature/your-feature
+   ```
 3. **Commit Your Changes**
-    ```sh
-    git commit -m 'Add your feature'
-    ```
+   ```sh
+   git commit -m 'Add your feature'
+   ```
 4. **Push to the Branch**
-    ```sh
-    git push origin feature/your-feature
-    ```
+   ```sh
+   git push origin feature/your-feature
+   ```
 5. **Open a Pull Request**
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source.
 
 ---
 
